@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Produto</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="home-admin.html">Home</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="relatorios.html">Relatórios</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="form-container">
+    <h2>Cadastrar Produto</h2>
+    <input type="text" id="nome" placeholder="Nome do Produto" />
+    <input type="text" id="categoria" placeholder="Categoria" />
+    <input type="number" id="quantidade" placeholder="Quantidade" />
+    <input type="number" id="preco" placeholder="Preço" />
+    <input type="file" id="imagem" accept="image/*" />
+    <button onclick="cadastrarProduto()">Cadastrar</button>
+    <div id="preview"></div>
+  </div>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - SoluçõesEstoque</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>SoluçõesEstoque</h1>
+
+    <!-- LOGIN -->
+    <div id="login-form">
+      <input type="email" id="email" placeholder="E-mail" />
+      <input type="password" id="senha" placeholder="Senha" />
+      <button onclick="login()">Entrar</button>
+      <p><a href="#" onclick="mostrarCadastro()">Criar nova conta</a></p>
+    </div>
+
+    <!-- CADASTRO -->
+    <div id="cadastro-form" style="display: none;">
+      <input type="email" id="cad-email" placeholder="Novo E-mail" />
+      <input type="password" id="cad-senha" placeholder="Nova Senha" />
+      <button onclick="cadastrar()">Cadastrar</button>
+      <p><a href="#" onclick="mostrarLogin()">Voltar para login</a></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
